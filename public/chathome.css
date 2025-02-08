@@ -1,0 +1,381 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#head h2{
+    font-size: 1.6rem;
+
+}
+
+#crt-grp-btn{
+    width: 50px;
+    border-radius: 25px;
+    background: whitesmoke;
+    color: #333333;
+    font-weight: bolder;
+    
+}
+
+.file-input {
+    display: none;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007BFF; 
+    border-radius: 12px;
+    background-color: #007BFF;
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#send-btn{
+
+    border-radius: 50px;
+}
+
+
+.file-input-label:hover {
+    background-color: #0056b3; 
+}
+
+
+#crt-grp-btn:hover{
+    background: rgb(219, 217, 217);
+}
+
+#grp-lists{
+    width:35%;
+    height: 100%;
+    background: #aae9ad; /* Change to white for better contrast */
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 10px; /* Add some padding */
+    max-height: 100vh; /* Set a maximum height for scrolling */
+    overflow-y: auto;
+}
+ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#crt-grp{
+    color: whitesmoke;
+    background: #5503e5;
+    margin-top: 5px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+#crt-grp-a{
+    color: whitesmoke;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#head{
+    padding-left: 10px;
+    width: 100%;
+    height: 10%;
+    background: #5503e5;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userWelcome{
+    font-size: 1.4rem;
+    padding-right: 10px;
+}
+
+#chat-box{
+    background: #F5F5F5; /* White Smoke */
+    color: #5503e5; 
+    width: 100%;
+    height: 90%;
+    background: whitesmoke;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+
+#chat-texts{
+    height: 90%;
+    width: 100%;
+    padding-left: 10px;
+    background: #aae9ad;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+#send-texts{
+    display: flex;
+    width:100%;
+}
+#show-text-pg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 90vh;
+    width: 100%;
+}
+#manage-group{
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: flex-end;
+}
+
+#manage-group-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#leave-frm-grp{
+    width: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-grp-name{
+    width: 100%;
+   color: #333333;
+   font-size: 1.4rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+#texts,#group-name{
+    display: block;
+    width: 1000px;
+    height: 45px;
+    border-radius: 15px;
+    padding: 2px 12px;
+    font-size: 1.2rem;
+}
+button{
+    width: auto;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 15px;
+    color: rgb(81, 4, 63);
+    background: #4ee8fc;
+}
+button:hover{
+    
+    background: #F5F5F5; /* White Smoke */
+    color: #5503e5;
+   
+    cursor: pointer;
+}
+
+
+#foot{
+    width: 100%;
+    height: 10%;
+    background: #5503e5;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+a{
+    color: #333333;
+    display: block;
+    margin-top: 8px;
+   
+}
+
+ul .grp-btn {
+    text-decoration: none;
+    width: 100%;
+    height: 60px; /* Set a specific height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically */
+    margin-top: 20px;
+    background: #5fccf7; /* Light gray background for list items */
+    color: #470a49; /* Darker text color */
+    border-radius: 8px; /* Rounded corners for list items */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for list items */
+}
+
+ul .grp-btn:hover {
+    background: #e0e0e0; /* Darker gray on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    text-decoration: none;
+}
+
+.grp-btn:hover{
+    color: #33333395;
+   
+}
+
+#create-group-form{
+    position:absolute;
+    background: #333333;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#add-user-to-group-form,#remove-user-from-group-form{
+    position:absolute;
+    background: #3dedf3;
+    border-radius: 12px;
+    width: 20%;
+    height: 60%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#group-name{
+    width: 400px;
+    
+}
+
+select{
+    width: 400px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+
+#create-group-form h3{
+  font-size: 1.8rem;
+  color: whitesmoke;
+  padding: 10px;
+ 
+}
+
+#create-group-form,#add-user-to-group-form label,#remove-user-from-group-form{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    padding: 5px;
+   
+    border-radius: 12px;
+}
+#create-group-form button{
+    width: 400px;
+}
+#duplicate-msg{
+    display:none;
+}
+
+.checkbox-container {
+    max-height: 150px; /* Set a max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 10px; /* Optional: Add some padding */
+    margin-bottom: 15px; /* Optional: Space below the checkbox list */
+    max-width: 250px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    margin: 5px 0;
+ 
+}
+
+
+@media (max-width: 600px) {
+   
+
+    #texts{
+        width: 100%;
+        padding: 10px;
+    }
+    button{
+        width: 50%;
+        padding: 10px;
+    }
+   
+    #chat-box {
+        background: #F5F5F5; /* White Smoke */
+        color: #5503e5; 
+        width: 100%;
+        height: 90%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Keep the input at the bottom */
+        align-items: center;
+    }
+    #crt-grp{
+        margin-top: 0px;
+    }
+    #grp-lists{
+        width:100%;
+        height: 100%;
+        background: #42b4f1bd;
+    }
+    
+    #chat-texts {
+        height: 95%; /* Set a specific height */
+        width: 100%; /* Use full width for mobile */
+        padding-left: 10px;
+        background: #eaeaea; /* Richer grey background */
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds */
+        overflow-x: hidden; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping of messages */
+    }
+    
+    #chat-texts p {
+        margin: 5px; /* Add some margin between messages */
+    word-wrap: break-word; /* Allow long words to break and wrap to the next line */
+    white-space: normal;/* Add some margin between messages */
+    }
+  
+}

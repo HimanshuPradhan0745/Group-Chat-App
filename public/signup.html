@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="signup.css" rel="stylesheet">
+    <title>Group-Chat-App</title>
+</head>
+<body>
+    <div id="container">
+        <header id="head">
+            <h2>Group Chat</h2>
+      </header>
+     <main id="signup-box">
+       <form id="signup-form">
+           <h3>Signup</h3>
+
+           <p id="user-exists">
+              User already exists! Please login.
+           </p>
+           <p id="user-created">
+            User created successfully! Please login.
+           </p>
+           <p id="uncaught-error">
+            An error occurred. Please try again.
+           </p>
+           <p>
+               <label for="name">
+                   Name:
+               </label>
+               <input type="text" id="name" name="uName" required>
+           </p>
+           <p>
+               <label for="email">
+                  Email:
+               </label>
+               <input type="email" id="email" name="uEmail" required>
+           </p>
+           <p>
+               <label for="phone">
+                 Phone:
+               </label>
+               <input type="tel" id="phone" name="uPhone" required>
+           </p>
+           <p>
+               <label for="password">
+                 Create Password:
+               </label>
+               <input type="password" id="password" name="uPassword" required>
+           </p>
+               <p class="submits">
+                   <button id="signup" type="submit">Submit & Signup</button>
+                   <a href="/login">Existing User</a>
+               </p>
+             
+        
+       </form>
+     
+   </main>
+     <footer id="foot">
+       <h4>Group-Chat-App@Sharpener</h4>
+     </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="signup.js"></script>
+</body>
+</html>

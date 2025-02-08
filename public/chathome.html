@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="chathome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Group-Chat-App</title>
+</head>
+<body>
+  <form id="create-group-form" >
+    <h3>Create New Group</h3>
+    <h4 id="duplicate-msg" style="color: red;">Group name already exists.. try different name!</h4>
+    <label for="group-name">Group Name:</label>
+    <input type="text" id="group-name" name="group-name" placeholder="Enter group name" required>
+
+    <label>Select Member/s To Add:</label>
+    <div class="checkbox-container">
+        <div id="members" class="checkbox-group">
+         
+         
+        </div>
+    </div>
+
+
+    <button id="create-btn">Create Group</button>
+    <button id="cancel-btn">Cancel</button>
+  </form>
+  <form id="add-user-to-group-form" >
+    <label>Select Member/s To Add:</label>
+    <div class="checkbox-container">
+        <div id="add-members-to-group" class="checkbox-group">
+         
+         
+        </div>
+    </div>
+
+    <button id="add-user-btn">Add User</button>
+    <button id="cancel-btn-au">Cancel</button>
+  </form>
+  <form id="remove-user-from-group-form" >
+    <label>Select Member/s To Remove:</label>
+    <div class="checkbox-container">
+        <div id="remove-members-from-group" class="checkbox-group">
+          
+        
+         
+        </div>
+    </div>
+
+    <button id="rem-user-btn">Remove User</button>
+    <button id="cancel-btn-ru">Cancel</button>
+  </form>
+    <div id="container">
+        <header id="head">
+            <h2>Group Chat</h2>
+            <h2 id="userWelcome"></h2>
+      </header>
+      
+     <main id="chat-box">
+      <div id="grp-lists">
+        <p id="crt-grp"> Create your group <button id="crt-grp-btn" type="button"><i class="fa-solid fa-plus"></i></button></p>
+           
+           <ul id="grp-lists-show">
+                 
+           </ul>
+      </div>
+     
+    
+      <div id="show-text-pg">
+        <div id="manage-group-head">
+
+          <h3 id="show-grp-name">Group Name :  </h3>
+          <div id=manage-group>
+            <button id="add-user">Add user</button><button id="remove-user">Remove User</button><button id="delete-group">Delete group</button>
+          </div>
+          <button id="leave-frm-grp">Leave group</button>
+          
+        </div>
+        <div id="chat-texts">
+        </div>
+        <p id="send-texts">
+          <input type="text" id="texts" required>
+          
+          <button id='send-btn' type="button">Send</button>
+        </p>
+      
+      </div>
+    
+    
+      
+   </main>
+     <footer id="foot">
+       <h4>Group-Chat-App@Sharpener</h4>
+     </footer>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="chathome.js"></script>
+</body>
+</html>

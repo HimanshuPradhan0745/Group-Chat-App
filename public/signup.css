@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#head{
+    padding-left: 5px;
+    width: 100%;
+    height: 10%;
+    background: #2504ff;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#signup-box{
+    background: #f2f2f2; 
+    color: #721577; 
+    width: 100%;
+    height: 80%;
+    background: rgb(171, 228, 228);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#signup-form{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    display: block;
+    width: 400px;
+    height: 45px;
+    border-radius: 15px;
+    padding: 2px 12px;
+    font-size: 1.2rem;
+}
+button{
+    width: 400px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: rgb(225, 52, 199);
+    background: #2808fb;
+}
+button:hover{
+    
+    background: #fdfdfd;
+    color: #701d91;
+   
+    cursor: pointer;
+}
+
+
+#foot{
+    width: 100%;
+    height: 10%;
+    background: #2706fe; 
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-exists{
+  font-size: 1.4rem;
+  color: red;
+  display: none;
+}
+#user-created{
+    font-size: 1.4rem;
+    color: green;
+    display: none;
+}
+
+#uncaught-error{
+    font-size: 1.4rem;
+  color: red;
+  display: none;
+}
+a{
+    color: #6d1753;
+    display: block;
+    margin-top: 8px;
+   
+}
+.submits{
+    text-align: center;
+}
+a:hover{
+    color: #33333395;
+   
+}
+
+@media (max-width: 600px) {
+   
+
+    input, button {
+        width: 100%;
+        padding: 10px;
+    }
+}
